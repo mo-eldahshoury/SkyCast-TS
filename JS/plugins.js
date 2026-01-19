@@ -1,4 +1,3 @@
-/* jQuery FlexSlider v2.2.2 */
 !(function (a) {
   (a.flexslider = function (b, c) {
     var d = a(b);
@@ -1265,7 +1264,6 @@
     a.isRetina() && a.init(e);
 })();
 
-/* Modernizr 2.8.3 (Custom Build) */
 (window.Modernizr = (function (a, b, c) {
   function z(a) {
     j.cssText = a;
@@ -7580,17 +7578,14 @@ window.jQuery &&
     },
   });
 
-/* Ariona Compass Starter Bootstrap */
 
 +(function () {
-  /* Data background image generator */
   var elBgImg = "[data-bg-image]";
   $(elBgImg).each(function () {
     var image = $(this).data("bg-image");
     $(this).css("background-image", "url(" + image + ")");
   });
 
-  /* Data background color generator */
   var elBgClr = "[data-bg-color]";
   $(elBgClr).each(function () {
     var color = $(this).data("bg-color");
@@ -7598,7 +7593,6 @@ window.jQuery &&
   });
 
   $(window).load(function () {
-    /* Filterable Items */
     var $container = $(".filterable-items");
     $container.isotope({
       filter: "*",

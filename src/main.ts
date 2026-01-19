@@ -1,4 +1,5 @@
 import { MOCK_NEWS, LATEST_UPDATES } from './newsData.js';
+
 interface AppConfig {
   WEATHER: {
     API_KEY: string;
@@ -55,12 +56,12 @@ async function getWeatherData(city: string): Promise<void> {
   if (!city) return;
   try {
     const response = await fetch(`${CONFIG.WEATHER.BASE_URL}?key=${CONFIG.WEATHER.API_KEY}&q=${city}&days=${CONFIG.WEATHER.FORECAST_DAYS}`);
+    
     if (response.ok && response.status !== 400) {
       const data: WeatherData = await response.json();
       renderWeather(data);
     }
   } catch (error) {
-    console.error("Weather error:", error);
   }
 }
 
@@ -148,30 +149,23 @@ function renderLatestUpdates(): void {
   sidebarContainer.innerHTML = htmlContent;
 }
 
-/* --- Initialization --- */
 document.addEventListener("DOMContentLoaded", () => {
-  // Menu Toggle
-  const menuToggle = document.querySelector(".menu-toggle") as HTMLElement;
-  const navigation = document.querySelector(".main-navigation") as HTMLElement;
-  if (menuToggle && navigation) {
-    menuToggle.onclick = () => navigation.classList.toggle("opened");
-  }
+  setTimeout(() => {
+    const searchInput = document.getElementById("search") as HTMLInputElement;
+    const submitBtn = document.getElementById("submit") as HTMLElement;
 
-  // Search Logic
-  const searchInput = document.getElementById("search") as HTMLInputElement;
-  const submitBtn = document.getElementById("submit") as HTMLElement;
-
-  if (searchInput) {
-    searchInput.onkeyup = (e: KeyboardEvent) => {
-      const target = e.target as HTMLInputElement;
-      getWeatherData(target.value);
-    };
-    if (submitBtn) {
-      submitBtn.onclick = () => getWeatherData(searchInput.value);
+    if (searchInput) {
+      searchInput.onkeyup = (e: KeyboardEvent) => {
+        const target = e.target as HTMLInputElement;
+        getWeatherData(target.value);
+      };
+      if (submitBtn) {
+        submitBtn.onclick = () => getWeatherData(searchInput.value);
+      }
+      getWeatherData(CONFIG.WEATHER.DEFAULT_CITY);
     }
-    getWeatherData(CONFIG.WEATHER.DEFAULT_CITY);
-  }
 
-  getLatestNews();
-  renderLatestUpdates();
+    getLatestNews();
+    renderLatestUpdates();
+  }, 100);
 });
