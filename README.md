@@ -17,6 +17,7 @@ A modern, responsive weather dashboard built with **TypeScript** and **OpenWeath
 * **TypeScript Powered:** Robust and type-safe codebase.
 
 ## 🛠️ Technologies Used
+
 * **Languages:** TypeScript, HTML5, CSS3
 * **API:** OpenWeatherMap API
 * **Libraries:** jQuery, GSAP (for animations)
