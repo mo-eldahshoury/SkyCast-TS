@@ -30,6 +30,7 @@ A modern, responsive weather dashboard built with **TypeScript** and **OpenWeath
 * `/css`: Stylesheets including layout and typography.
 
 ## ⚙️ How to Run Locally
+
 1. Clone the repository:
    ```bash
    git clone [https://github.com/mo-eldahshoury/SkyCast-TS.git](https://github.com/mo-eldahshoury/SkyCast-TS.git)
