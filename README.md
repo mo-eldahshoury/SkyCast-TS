@@ -7,7 +7,7 @@ A modern, responsive weather dashboard built with **TypeScript** and **OpenWeath
 [Check out the Live Website here](https://sky-cast-beryl.vercel.app/)
 
 ---
-
+ 
 ## ✨ Features 
 
 * **Real-time Weather Data:** Accurate information about temperature, humidity, and wind speed.
