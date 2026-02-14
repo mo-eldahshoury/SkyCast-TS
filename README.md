@@ -5,7 +5,7 @@ A modern, responsive weather dashboard built with **TypeScript** and **OpenWeath
 ## 🚀 Live Demo
 
 [Check out the Live Website here](https://sky-cast-beryl.vercel.app/)
-
+ 
 ---
  
 ## ✨ Features 
