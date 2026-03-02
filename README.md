@@ -2,7 +2,7 @@
 
 A modern, responsive weather dashboard built with **TypeScript** and **OpenWeatherMap API**. This project was developed as part of my professional preparation for advanced frontend roles.
 
-## 🚀 Live Demo 
+## 🚀 Live Demo
 
 [Check out the Live Website here](https://sky-cast-beryl.vercel.app/)
  
