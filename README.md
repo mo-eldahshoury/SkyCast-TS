@@ -8,6 +8,7 @@ A modern, responsive weather dashboard built with **TypeScript** and **OpenWeath
  
 ---
 
+
 ## ✨ Features
 
 * **Real-time Weather Data:** Accurate information about temperature, humidity, and wind speed.
