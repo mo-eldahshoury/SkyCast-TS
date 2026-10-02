@@ -1,6 +1,5 @@
 # 🌤️ SkyCast | Weather Forecast Application
 
-
 A modern, responsive weather dashboard built with **TypeScript** and **OpenWeatherMap API**. This project was developed as part of my professional preparation for advanced frontend roles.
 
 ## 🚀 Live Demo
